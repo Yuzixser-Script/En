@@ -29,9 +29,9 @@ local floorReplicated = ReplicatedStorage:WaitForChild("FloorReplicated")
 local remotesFolder = ReplicatedStorage:WaitForChild("RemotesFolder")
 
 local lastRespawn;
-local BaseEntitySpeed = 65
-local colourGuiding = Color3.fromRGB(137, 207, 255)
-local colourCurious = Color3.fromRGB(253, 255, 133)
+local BaseEntitySpeed = 50
+local colourGuiding = Color3.fromRGB(100, 0, 0)
+local colourCurious = Color3.fromRGB(0, 255, 0)
 
 local vynixuModules = {
 	Functions = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Functions.lua"))()
@@ -762,7 +762,7 @@ spawner.Run = function(entityTable)
 	
 		if spawnPoint then
 			-- Spawning
-			model:PivotTo(spawnPoint.CFrame + Vector3.new(0, config.Entity.HeightOffset, 0))
+			model:PivotTo(spawnPoint.CFrame + Vector3.new(0, config.Entity.HeightOffset, 5))
 			model.Parent = workspace
 			task.spawn(entityTable.RunCallback, entityTable, "OnSpawned") -- OnSpawned
 	
