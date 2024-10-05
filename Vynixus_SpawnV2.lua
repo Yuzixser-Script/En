@@ -30,8 +30,8 @@ local remotesFolder = ReplicatedStorage:WaitForChild("RemotesFolder")
 
 local lastRespawn;
 local BaseEntitySpeed = 50
-local colourGuiding = Color3.fromRGB(100, 0, 0)
-local colourCurious = Color3.fromRGB(0, 255, 0)
+local colourGuiding = Color3.fromRGB(255, 20, 50)
+local colourCurious = Color3.fromRGB(255, 10, 20)
 
 local vynixuModules = {
 	Functions = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Functions.lua"))()
