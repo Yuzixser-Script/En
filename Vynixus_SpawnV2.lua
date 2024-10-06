@@ -762,7 +762,7 @@ spawner.Run = function(entityTable)
 	
 		if spawnPoint then
 			-- Spawning
-			model:PivotTo(spawnPoint.CFrame + Vector3.new(math.random(-15,15), config.Entity.HeightOffset, math.random(-15,5)))
+			model:PivotTo(spawnPoint.CFrame + Vector3.new(-10, config.Entity.HeightOffset, 30))
 			model.Parent = workspace
 			task.spawn(entityTable.RunCallback, entityTable, "OnSpawned") -- OnSpawned
 	
